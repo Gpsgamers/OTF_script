@@ -2,9 +2,15 @@ package sanity_script;
 
 import org.openqa.selenium.By;
 
-import Runner_script.Runner;
-
 public class Element extends Runner {
+	public static By Toast(String content) {
+		return By.xpath("//*[text()='"+content+"']");
+	}
+	public static By loader = By.xpath("//div[@class='pageLoader fixed overlay']");
+	
+	public static By show_stopper_Ui = By.xpath("//*[text()='Something went wrong']");
+	public static By tryagain_btn = By.xpath("//*[text()='Try again']");
+	
 	// login page
 	public static By emailfield = By.xpath("//*[@label ='email']");
 	public static By password = By.xpath("//*[@label ='password']");
@@ -41,5 +47,12 @@ public class Element extends Runner {
 	public static String disabled_play_btn = "//div[@class='action_join disable record ']";
 	public static String ellipses_btn = "//button[@class='  cp-btn-icon blue rounded ']"; 
 	
-
+	
+	//Create Stream popup
+	public static By Title_field =By.xpath("//input[@id='title']");
+	public static By createLivestream_btn = By.xpath("//*[text()='Create Live Stream']");
+	
+	//pre-previw screen
+	public static By entering_stream_loader = By.xpath("entering_stream_wraper_loader");
+	public static By enter_stream_btn = By.xpath("//*[text()='Enter Stream']");
 }

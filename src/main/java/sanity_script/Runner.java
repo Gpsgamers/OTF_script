@@ -1,8 +1,10 @@
-package Runner_script;
+package sanity_script;
 
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -12,60 +14,62 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.safari.SafariOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
 
-//@CucumberOptions(features = { "src\\main\\resources\\feature_file\\saniy.feature",
-//
-//}, // Path to feature files
-//		glue = { "console_script" }, // Package for step definitions
-//		plugin = { "pretty", // For console output
-//				"html:target/cucumber-reports/Cucumber.html", // HTML report
-//				"json:target/cucumber-reports/Cucumber.json" // JSON report
-//		}, monochrome = true // To make console output more readable
-//
-//)
+@CucumberOptions(features = { "src\\main\\java\\feature_file\\OTF_sanity.feature",
+
+}, // Path to feature files
+		glue = { "sanity_script" }, // Package for step definitions
+		plugin = { "pretty", // For console output
+				"html:target/cucumber-reports/Cucumber.html", // HTML report
+				"json:target/cucumber-reports/Cucumber.json" // JSON report
+		}, monochrome = true // To make console output more readable
+
+)
 public class Runner extends AbstractTestNGCucumberTests {
 	public static WebDriver driver;
-	public static String Browser, Owner, Admin, cohost, Owner_password,Admin_password,cohost_password , url;
+	public static String Browser, Owner, Admin, cohost, Owner_password, Admin_password, cohost_password, url;
 
 	@BeforeClass
 	@Parameters({ "browser", "environment" })
 	public void browserlaunchconfiguration(String browser, String environment) throws InterruptedException {
 		Browser = browser;
 		System.out.println(Browser);
-		launchbrowser(browser);
+		driver = launchbrowser(browser);
 		Environment(environment);
 		driver.manage().window().maximize();
 		driver.get(url);
-		
 	}
 
 	@AfterClass
 	public void browserQuitconfiguration() {
-		// driver.quit();
+		driver.quit();
 	}
 
 	// launch browser
-	public void launchbrowser(String browser) {
+	public WebDriver launchbrowser(String browser) {
 		if (browser.equals("chrome")) {
 			ChromeOptions options = new ChromeOptions();
-			driver = new ChromeDriver(options);
+			return new ChromeDriver(options);
 		} else if (browser.equals("edge")) {
-			EdgeOptions options = new EdgeOptions(); 
-			driver = new EdgeDriver(options);
+			EdgeOptions options = new EdgeOptions();
+			return new EdgeDriver(options);
 		} else if (browser.equals("firefox")) {
-			FirefoxOptions options = new FirefoxOptions(); 
+			FirefoxOptions options = new FirefoxOptions();
 //			profile.setPreference("network.manage-offline-status", true);
-			driver = new FirefoxDriver(options);
+			return new FirefoxDriver(options);
 		} else if (browser.equals("safari")) {
 			SafariOptions options = new SafariOptions();
-			driver = new SafariDriver(options);
+			return new SafariDriver(options);
 		} else {
-			driver = null;
+			return null;
 		}
 	}
 
@@ -73,35 +77,35 @@ public class Runner extends AbstractTestNGCucumberTests {
 		switch (Env) {
 		case "QA":
 			url = "https://onthefly-qa.contus.us/";
-			
-			Owner = "rahul.s@contus.in";
-			Owner_password = "";
+
+			Owner = "kogila.m@contus.in";
+			Owner_password = "Welcome@123";
 			Admin = "SuperAdmin!@#$1234";
-			Admin_password="";
+			Admin_password = "";
 			cohost = "rahul.s@contus.in";
-			cohost_password="";
+			cohost_password = "";
 			break;
 
 		case "DEV":
 			url = "https://onthefly-dev.contus.us/";
-			
+
 			Owner = "rahul.s@contus.in";
 			Owner_password = "";
 			Admin = "SuperAdmin!@#$1234";
-			Admin_password="";
+			Admin_password = "";
 			cohost = "rahul.s@contus.in";
-			cohost_password="";
+			cohost_password = "";
 			break;
 
 		case "Live":
 			url = "https://console.onthefly.stream/";
-			
+
 			Owner = "rahul.s@contus.in";
 			Owner_password = "";
 			Admin = "SuperAdmin!@#$1234";
-			Admin_password="";
+			Admin_password = "";
 			cohost = "rahul.s@contus.in";
-			cohost_password="";
+			cohost_password = "";
 			break;
 		}
 	}
@@ -115,7 +119,6 @@ public class Runner extends AbstractTestNGCucumberTests {
 
 		switch (Browser) {
 		case "chrome":
-
 			((ChromeDriver) driver).executeCdpCommand("Network.emulateNetworkConditions", offlineParams);
 			System.out.println("Network disconnected");
 			break;
@@ -129,20 +132,22 @@ public class Runner extends AbstractTestNGCucumberTests {
 			((EdgeDriver) driver).executeCdpCommand("Network.emulateNetworkConditions", offlineParams);
 			break;
 		}
-
 	}
 
 	public static void online() {
 		Map<String, Object> onlineParams = new HashMap<>();
 		onlineParams.put("offline", false);
-		onlineParams.put("latency", 5); // Set small latency to simulate a real connection
+		onlineParams.put("latency", 0); // Set small latency to simulate a real connection
 		onlineParams.put("downloadThroughput", -1); // -1 for normal speed
 		onlineParams.put("uploadThroughput", -1); // -1 for normal speed
 
 		switch (Browser) {
 		case "chrome":
-			((ChromeDriver) driver).executeCdpCommand("Network.emulateNetworkConditions", onlineParams);
-			System.out.println("Network reconnected.");
+			ChromeDriver ref = (ChromeDriver) driver;
+			WebDriverWait wait = new WebDriverWait(ref, Duration.ofSeconds(10));
+			ref.executeCdpCommand("Network.emulateNetworkConditions", onlineParams);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(Admin)));
+			System.out.println("Network connected");
 			break;
 
 		case "firefox":
