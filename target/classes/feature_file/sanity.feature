@@ -1,10 +1,65 @@
 @tag
 Feature: Title of your feature
 
+  @offline
+  Scenario: login page offline scenaios
+    Given Navigate to the login page
+    When Goes to offline
+    Then single You are currently offline toast is displayed
+    When click on the singin button without filling the email and password
+    Then single Please check your internet connection toast is displayed
+    When fill with invalid emailID and password
+    And click on the signin button
+    Then single Please check your internet connection toast is displayed
+    #When click on the Forgot Password
+    #Then single Please check your internet connection toast is displayed
+    #When click on the sign up
+    #Then single Please check your internet connection toast is displayed
+    When connect back to online
+    Then single connected toast is displayed
+      
+
   @sanity
   Scenario: Login the application
     When Enter the username and password and click on the login the button.
     Then If login success page should be navigating to the stream page.
+    
+    
+  @offline
+  Scenario: Stream page offline scenario.
+  	Given Navigate to the stream page
+  	When Goes to offline
+    Then single You are currently offline toast is displayed
+    When click on the create stream button
+    Then single Please check your internet connection toast is displayed
+    When click on the create Record video button
+    Then single Please check your internet connection toast is displayed
+    When click on the Schedule Webinar video button
+    Then single Please check your internet connection toast is displayed
+    When click on the upcoming tab
+    Then single Please check your internet connection toast is displayed
+    When click on the Past tab
+    Then single Please check your internet connection toast is displayed
+    When try to search on the search
+    Then single Please check your internet connection toast is displayed
+   	When click on the Destination menu
+  	Then single Please check your internet connection toast is displayed in destination page
+  	When Navigate back to stream page
+  	Then single Please check your internet connection toast is displayed in stream page
+  	#When click on the library menu
+  	#Then single Please check your internet connection toast is displayed in Library page 
+  	And show stopper Ui with "Something went wrong" content should be displayed
+  	When click on the stream menu from library in offline
+  	Then element is not click able
+    When connect back to online
+    Then single connected toast is displayed
+    When click on the Try again button from the show stopper UI
+    And click on the stream menu
+    Then page is navigating to the stream page
+    When Goes to offline
+    #And click on the Members menu
+		#Then single Please check your internet connection toast is displayed on the members page
+    
 
   #####______stream page____########
   @sanity
@@ -75,8 +130,8 @@ Feature: Title of your feature
     Examples: 
       | Text                          |
       | Webinar Created Successfully! |
-      
-	@sanity
+
+  @sanity
   Scenario Outline: Enter the studio page from the webinar settings page.
     When click on the Enter studio button
     Then page will be navigating to the pre-preview screen
@@ -90,7 +145,3 @@ Feature: Title of your feature
     Examples: 
       | status    | label   |
       | Scheduled | Webinar |
-      
-      
-      
-      
