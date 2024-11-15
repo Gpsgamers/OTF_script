@@ -6,7 +6,7 @@ public class Element extends Runner {
 	public static By Toast(String content) {
 		return By.xpath("//*[text()='"+content+"']");
 	}
-	public static By loader = By.xpath("//div[@class='pageLoader fixed overlay']");
+	public static By loader = By.xpath("//div[contains(@class,'pageLoader')]");
 	
 	public static By show_stopper_Ui = By.xpath("//*[text()='Something went wrong']");
 	public static By tryagain_btn = By.xpath("//*[text()='Try again']");
