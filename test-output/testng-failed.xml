@@ -9,7 +9,7 @@
         <methods>
           <include name="setUpClass"/>
           <include name="browserQuitconfiguration"/>
-          <include name="runScenario" invocation-numbers="0 1 2 3 4 5 6 7"/>
+          <include name="runScenario" invocation-numbers="4"/>
           <include name="tearDownClass"/>
           <include name="browserlaunchconfiguration"/>
         </methods>

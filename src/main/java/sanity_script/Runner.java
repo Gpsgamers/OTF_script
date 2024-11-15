@@ -23,7 +23,7 @@ import org.testng.annotations.Parameters;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-@CucumberOptions(features = { "src\\main\\java\\feature_file\\OTF_sanity.feature",
+@CucumberOptions(features = { "src\\main\\java\\feature_file\\OTF_offline.feature",
 
 }, // Path to feature files
 		glue = { "sanity_script" }, // Package for step definitions
@@ -63,7 +63,6 @@ public class Runner extends AbstractTestNGCucumberTests {
 			return new EdgeDriver(options);
 		} else if (browser.equals("firefox")) {
 			FirefoxOptions options = new FirefoxOptions();
-//			profile.setPreference("network.manage-offline-status", true);
 			return new FirefoxDriver(options);
 		} else if (browser.equals("safari")) {
 			SafariOptions options = new SafariOptions();
@@ -78,7 +77,7 @@ public class Runner extends AbstractTestNGCucumberTests {
 		case "QA":
 			url = "https://onthefly-qa.contus.us/";
 
-			Owner = "kogila.m@contus.in";
+			Owner = "guruprasad.b@contus.in";
 			Owner_password = "Welcome@123";
 			Admin = "SuperAdmin!@#$1234";
 			Admin_password = "";
@@ -110,7 +109,7 @@ public class Runner extends AbstractTestNGCucumberTests {
 		}
 	}
 
-	public static void offline() {
+	public static void offline() throws InterruptedException {
 		Map<String, Object> offlineParams = new HashMap<>();
 		offlineParams.put("offline", true);
 		offlineParams.put("latency", 0); // Latency in ms (no delay)
@@ -120,6 +119,7 @@ public class Runner extends AbstractTestNGCucumberTests {
 		switch (Browser) {
 		case "chrome":
 			((ChromeDriver) driver).executeCdpCommand("Network.emulateNetworkConditions", offlineParams);
+			Thread.sleep(3000);
 			System.out.println("Network disconnected");
 			break;
 
@@ -143,10 +143,7 @@ public class Runner extends AbstractTestNGCucumberTests {
 
 		switch (Browser) {
 		case "chrome":
-			ChromeDriver ref = (ChromeDriver) driver;
-			WebDriverWait wait = new WebDriverWait(ref, Duration.ofSeconds(10));
-			ref.executeCdpCommand("Network.emulateNetworkConditions", onlineParams);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(Admin)));
+			((ChromeDriver) driver).executeCdpCommand("Network.emulateNetworkConditions", onlineParams);
 			System.out.println("Network connected");
 			break;
 

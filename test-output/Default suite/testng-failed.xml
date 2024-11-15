@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Runner_script.Runner">
+      <class name="sanity_script.step_defination">
         <methods>
           <include name="setUpClass"/>
-          <include name="browserlaunchconfiguration"/>
+          <include name="browserQuitconfiguration"/>
           <include name="runScenario"/>
           <include name="tearDownClass"/>
-          <include name="browserQuitconfiguration"/>
+          <include name="browserlaunchconfiguration"/>
         </methods>
-      </class> <!-- Runner_script.Runner -->
+      </class> <!-- sanity_script.step_defination -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
