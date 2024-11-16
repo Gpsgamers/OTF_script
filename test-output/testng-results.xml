@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-15T16:34:11 IST" name="Suite" finished-at="2024-11-15T16:35:24 IST" duration-ms="73007">
+  <suite started-at="2024-11-16T18:53:04 IST" name="Suite" finished-at="2024-11-16T18:53:19 IST" duration-ms="15021">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:sanity_script.Runner@7586beff]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:sanity_script.Runner@5fe94a96]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-11-15T16:34:11 IST" name="Test" finished-at="2024-11-15T16:35:24 IST" duration-ms="73007">
+    <test started-at="2024-11-16T18:53:04 IST" name="Test" finished-at="2024-11-16T18:53:19 IST" duration-ms="15021">
       <class name="sanity_script.Runner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:sanity_script.Runner@7586beff]" started-at="2024-11-15T16:34:11 IST" name="setUpClass" finished-at="2024-11-15T16:34:12 IST" duration-ms="734" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:sanity_script.Runner@5fe94a96]" started-at="2024-11-16T18:53:04 IST" name="setUpClass" finished-at="2024-11-16T18:53:05 IST" duration-ms="559" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@a7cf42f]]>
+                <![CDATA[org.testng.TestRunner@5ae95707]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="browserlaunchconfiguration(java.lang.String,java.lang.String)[pri:0, instance:sanity_script.Runner@7586beff]" started-at="2024-11-15T16:34:12 IST" name="browserlaunchconfiguration" finished-at="2024-11-15T16:34:24 IST" duration-ms="11835" status="PASS">
+        <test-method is-config="true" signature="browserlaunchconfiguration(java.lang.String,java.lang.String)[pri:0, instance:sanity_script.Runner@5fe94a96]" started-at="2024-11-16T18:53:05 IST" name="browserlaunchconfiguration" finished-at="2024-11-16T18:53:13 IST" duration-ms="8104" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,62 +30,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[QA]]>
+                <![CDATA[Live]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserlaunchconfiguration -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:sanity_script.Runner@7586beff]" started-at="2024-11-15T16:34:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-15T16:34:29 IST" duration-ms="4607" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["login page : go to offline and check the toast content"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["offline sceanrios"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:sanity_script.Runner@7586beff]" started-at="2024-11-15T16:34:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-15T16:34:32 IST" duration-ms="3534" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login page : click on the sigin in offline"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["offline sceanrios"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:sanity_script.Runner@7586beff]" started-at="2024-11-15T16:34:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-15T16:34:37 IST" duration-ms="4496" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login page : come back to online in login page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["offline sceanrios"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:sanity_script.Runner@7586beff]" started-at="2024-11-15T16:34:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-15T16:34:52 IST" duration-ms="15749" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:sanity_script.Runner@5fe94a96]" started-at="2024-11-16T18:53:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-16T18:53:15 IST" duration-ms="2138" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -98,14 +50,53 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <div class="toast_layout_desc">...</div> is not clickable at point (163, 603). Other element would receive the click: <div class="pageLoader fixed overlay">...</div>
+  (Session info: chrome=130.0.6723.117)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9cc5605d7efdbc3e9a80cc20e009aeb4, clickElement {id=f.F098D360F2710F3AA482EE214FF54777.d.716D692D883F0E6F2333FC90FDC40D10.e.1054}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\guru\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53957}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53957/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9cc5605d7efdbc3e9a80cc20e009aeb4)] -> xpath: //*[text()='Login success']]
+Session ID: 9cc5605d7efdbc3e9a80cc20e009aeb4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="toast_layout_desc">...</div> is not clickable at point (163, 603). Other element would receive the click: <div class="pageLoader fixed overlay">...</div>
+  (Session info: chrome=130.0.6723.117)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9cc5605d7efdbc3e9a80cc20e009aeb4, clickElement {id=f.F098D360F2710F3AA482EE214FF54777.d.716D692D883F0E6F2333FC90FDC40D10.e.1054}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\guru\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53957}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53957/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9cc5605d7efdbc3e9a80cc20e009aeb4)] -> xpath: //*[text()='Login success']]
+Session ID: 9cc5605d7efdbc3e9a80cc20e009aeb4
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at sanity_script.step_defination.if_login_success_page_should_be_navigating_to_the_stream_page(step_defination.java:85)
+at ✽.If login success page should be navigating to the stream page.(file:///C:/Users/guru/Desktop/Automation_script/OTF_script/src/main/java/feature_file/OTF_offline.feature:26)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:sanity_script.Runner@7586beff]" started-at="2024-11-15T16:34:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-15T16:35:22 IST" duration-ms="29248" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:sanity_script.Runner@5fe94a96]" started-at="2024-11-16T18:53:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-16T18:53:15 IST" duration-ms="38" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Stream page : offline scenario in stream page"]]>
+                <![CDATA["Pre-preview screen : Offline scenario in pre-preview screen"]]>
               </value>
             </param>
             <param index="1">
@@ -114,14 +105,112 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//a[@href='/broadcast'])[2]"}
+  (Session info: chrome=130.0.6723.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9cc5605d7efdbc3e9a80cc20e009aeb4, findElement {value=(//a[@href='/broadcast'])[2], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\guru\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53957}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53957/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9cc5605d7efdbc3e9a80cc20e009aeb4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//a[@href='/broadcast'])[2]"}
+  (Session info: chrome=130.0.6723.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9cc5605d7efdbc3e9a80cc20e009aeb4, findElement {value=(//a[@href='/broadcast'])[2], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\guru\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53957}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53957/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9cc5605d7efdbc3e9a80cc20e009aeb4
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at sanity_script.step_defination.navigate_to_pre_preview_screen(step_defination.java:337)
+at ✽.Navigate to pre-preview screen(file:///C:/Users/guru/Desktop/Automation_script/OTF_script/src/main/java/feature_file/OTF_offline.feature:104)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="browserQuitconfiguration()[pri:0, instance:sanity_script.Runner@7586beff]" started-at="2024-11-15T16:35:22 IST" name="browserQuitconfiguration" finished-at="2024-11-15T16:35:24 IST" duration-ms="2692" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:sanity_script.Runner@5fe94a96]" started-at="2024-11-16T18:53:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-16T18:53:19 IST" duration-ms="3835" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["studio page : offline scenario in studio page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["offline sceanrios"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: chrome=130.0.6723.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9cc5605d7efdbc3e9a80cc20e009aeb4, clickElement {id=f.F098D360F2710F3AA482EE214FF54777.d.716D692D883F0E6F2333FC90FDC40D10.e.1088}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\guru\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53957}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53957/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9cc5605d7efdbc3e9a80cc20e009aeb4)] -> xpath: //*[text()='You are currently offline']]
+Session ID: 9cc5605d7efdbc3e9a80cc20e009aeb4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=130.0.6723.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9cc5605d7efdbc3e9a80cc20e009aeb4, clickElement {id=f.F098D360F2710F3AA482EE214FF54777.d.716D692D883F0E6F2333FC90FDC40D10.e.1088}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\guru\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53957}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53957/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9cc5605d7efdbc3e9a80cc20e009aeb4)] -> xpath: //*[text()='You are currently offline']]
+Session ID: 9cc5605d7efdbc3e9a80cc20e009aeb4
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at sanity_script.step_defination.you_are_currently_offline_toast_is_displayed_in_studio_page(step_defination.java:417)
+at ✽.You are currently offline toast is displayed in studio page(file:///C:/Users/guru/Desktop/Automation_script/OTF_script/src/main/java/feature_file/OTF_offline.feature:118)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="browserQuitconfiguration()[pri:0, instance:sanity_script.Runner@5fe94a96]" started-at="2024-11-16T18:53:19 IST" name="browserQuitconfiguration" finished-at="2024-11-16T18:53:19 IST" duration-ms="266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuitconfiguration -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:sanity_script.Runner@7586beff]" started-at="2024-11-15T16:35:24 IST" name="tearDownClass" finished-at="2024-11-15T16:35:24 IST" duration-ms="51" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:sanity_script.Runner@5fe94a96]" started-at="2024-11-16T18:53:19 IST" name="tearDownClass" finished-at="2024-11-16T18:53:19 IST" duration-ms="43" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

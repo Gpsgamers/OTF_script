@@ -9,7 +9,9 @@ public class Element extends Runner {
 	public static By loader = By.xpath("//div[contains(@class,'pageLoader')]");
 	
 	public static By show_stopper_Ui = By.xpath("//*[text()='Something went wrong']");
+	public static By show_stopper_overlay = By.xpath("//*[@class='outside_wraper']");
 	public static By tryagain_btn = By.xpath("//*[text()='Try again']");
+	public static By pageinfo = By.xpath("//div[@class='pagesInfo']");
 	
 	// login page
 	public static By emailfield = By.xpath("//*[@label ='email']");

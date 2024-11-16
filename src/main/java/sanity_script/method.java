@@ -12,7 +12,6 @@ public class method extends Element {
 	}
 	
 	public static void stream_creation(String name) {
-		driver.get("https://onthefly-qa.contus.us/broadcast");
 		driver.findElement(create_stream_btn(1)).click();
 		driver.findElement(create_with_Studio_btn).click();
 		driver.findElement(Title_field).sendKeys(name);

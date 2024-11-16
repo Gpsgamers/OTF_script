@@ -3,7 +3,7 @@
 <suite name="Suite">
 	<test name="Test">
 		<parameter name="browser" value="chrome" />
-		<parameter name="environment" value="QA" />
+		<parameter name="environment" value="Live" />
 		<classes>
 			<class name="sanity_script.Runner"/>
 		</classes>

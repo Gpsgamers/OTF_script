@@ -54,6 +54,7 @@ public class Runner extends AbstractTestNGCucumberTests {
 	public WebDriver launchbrowser(String browser) {
 		if (browser.equals("chrome")) {
 			ChromeOptions options = new ChromeOptions();
+			 options.addArguments("--use-fake-ui-for-media-stream");
 			return new ChromeDriver(options);
 		} else if (browser.equals("edge")) {
 			EdgeOptions options = new EdgeOptions();
@@ -96,8 +97,8 @@ public class Runner extends AbstractTestNGCucumberTests {
 		case "Live":
 			url = "https://console.onthefly.stream/";
 
-			Owner = "rahul.s@contus.in";
-			Owner_password = "";
+			Owner = "guruprasad.b@contus.in";
+			Owner_password = "Welcome@123";
 			Admin = "SuperAdmin!@#$1234";
 			Admin_password = "";
 			cohost = "rahul.s@contus.in";

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\guruprasad\Desktop\Automation_project\OTF_script\testNG.xml</span>
+                    <span>C:\Users\guru\Desktop\Automation_script\OTF_script\testNG.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,41 +93,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">3 methods, 3 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sanity_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;login page : go to offline and check the toast content&quot;, &quot;offline sceanrios&quot;)">runScenario("login page : go to offline and check the toast content", "offline sceanrios")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sanity_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Stream page : offline scenario in stream page&quot;, &quot;offline sceanrios&quot;)">runScenario("Stream page : offline scenario in stream page", "offline sceanrios")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="sanity_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Login the application&quot;, &quot;offline sceanrios&quot;)">runScenario("Login the application", "offline sceanrios")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sanity_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Login page : click on the sigin in offline&quot;, &quot;offline sceanrios&quot;)">runScenario("Login page : click on the sigin in offline", "offline sceanrios")</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sanity_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Pre-preview screen : Offline scenario in pre-preview screen&quot;, &quot;offline sceanrios&quot;)">runScenario("Pre-preview screen : Offline scenario in pre-preview screen", "offline sceanrios")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sanity_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Login page : come back to online in login page&quot;, &quot;offline sceanrios&quot;)">runScenario("Login page : come back to online in login page", "offline sceanrios")</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sanity_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;studio page : offline scenario in studio page&quot;, &quot;offline sceanrios&quot;)">runScenario("studio page : offline scenario in studio page", "offline sceanrios")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -139,68 +129,117 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">sanity_script.Runner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;login page : go to offline and check the toast content&quot;, &quot;offline sceanrios&quot;)">
-                  </a> <!-- runScenario("login page : go to offline and check the toast content", "offline sceanrios") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("login page : go to offline and check the toast content", "offline sceanrios")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Stream page : offline scenario in stream page&quot;, &quot;offline sceanrios&quot;)">
-                  </a> <!-- runScenario("Stream page : offline scenario in stream page", "offline sceanrios") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Stream page : offline scenario in stream page", "offline sceanrios")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="runScenario(&quot;Login the application&quot;, &quot;offline sceanrios&quot;)">
                   </a> <!-- runScenario("Login the application", "offline sceanrios") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Login the application", "offline sceanrios")</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;toast_layout_desc&quot;&gt;...&lt;/div&gt; is not clickable at point (163, 603). Other element would receive the click: &lt;div class=&quot;pageLoader fixed overlay&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=130.0.6723.117)
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9cc5605d7efdbc3e9a80cc20e009aeb4, clickElement {id=f.F098D360F2710F3AA482EE214FF54777.d.716D692D883F0E6F2333FC90FDC40D10.e.1054}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\guru\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53957}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53957/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9cc5605d7efdbc3e9a80cc20e009aeb4)] -&gt; xpath: //*[text()=&apos;Login success&apos;]]
+Session ID: 9cc5605d7efdbc3e9a80cc20e009aeb4
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at sanity_script.step_defination.if_login_success_page_should_be_navigating_to_the_stream_page(step_defination.java:85)
+	at ✽.If login success page should be navigating to the stream page.(file:///C:/Users/guru/Desktop/Automation_script/OTF_script/src/main/java/feature_file/OTF_offline.feature:26)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Login page : click on the sigin in offline&quot;, &quot;offline sceanrios&quot;)">
-                  </a> <!-- runScenario("Login page : click on the sigin in offline", "offline sceanrios") -->
+                  <a name="runScenario(&quot;Pre-preview screen : Offline scenario in pre-preview screen&quot;, &quot;offline sceanrios&quot;)">
+                  </a> <!-- runScenario("Pre-preview screen : Offline scenario in pre-preview screen", "offline sceanrios") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Login page : click on the sigin in offline", "offline sceanrios")</span>
+                  <span class="parameters">("Pre-preview screen : Offline scenario in pre-preview screen", "offline sceanrios")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//a[@href=&apos;/broadcast&apos;])[2]&quot;}
+  (Session info: chrome=130.0.6723.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9cc5605d7efdbc3e9a80cc20e009aeb4, findElement {value=(//a[@href=&apos;/broadcast&apos;])[2], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\guru\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53957}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53957/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9cc5605d7efdbc3e9a80cc20e009aeb4
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at sanity_script.step_defination.navigate_to_pre_preview_screen(step_defination.java:337)
+	at ✽.Navigate to pre-preview screen(file:///C:/Users/guru/Desktop/Automation_script/OTF_script/src/main/java/feature_file/OTF_offline.feature:104)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Login page : come back to online in login page&quot;, &quot;offline sceanrios&quot;)">
-                  </a> <!-- runScenario("Login page : come back to online in login page", "offline sceanrios") -->
+                  <a name="runScenario(&quot;studio page : offline scenario in studio page&quot;, &quot;offline sceanrios&quot;)">
+                  </a> <!-- runScenario("studio page : offline scenario in studio page", "offline sceanrios") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Login page : come back to online in login page", "offline sceanrios")</span>
+                  <span class="parameters">("studio page : offline scenario in studio page", "offline sceanrios")</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=130.0.6723.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9cc5605d7efdbc3e9a80cc20e009aeb4, clickElement {id=f.F098D360F2710F3AA482EE214FF54777.d.716D692D883F0E6F2333FC90FDC40D10.e.1088}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\guru\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53957}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53957/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9cc5605d7efdbc3e9a80cc20e009aeb4)] -&gt; xpath: //*[text()=&apos;You are currently offline&apos;]]
+Session ID: 9cc5605d7efdbc3e9a80cc20e009aeb4
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at sanity_script.step_defination.you_are_currently_offline_toast_is_displayed_in_studio_page(step_defination.java:417)
+	at ✽.You are currently offline toast is displayed in studio page(file:///C:/Users/guru/Desktop/Automation_script/OTF_script/src/main/java/feature_file/OTF_offline.feature:118)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\guruprasad\Desktop\Automation_project\OTF_script\testNG.xml</span>
+            <span class="header-content">C:\Users\guru\Desktop\Automation_script\OTF_script\testNG.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -208,7 +247,7 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;environment&quot; value=&quot;QA&quot;/&gt;
+    &lt;parameter name=&quot;environment&quot; value=&quot;Live&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;sanity_script.Runner&quot;/&gt;
@@ -259,32 +298,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'sanity_script.Runner')
-data.setCell(0, 3, 29248);
+data.setCell(0, 3, 3835);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'sanity_script.Runner')
-data.setCell(1, 3, 15749);
+data.setCell(1, 3, 2138);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'sanity_script.Runner')
-data.setCell(2, 3, 4607);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'runScenario')
-data.setCell(3, 2, 'sanity_script.Runner')
-data.setCell(3, 3, 4496);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'runScenario')
-data.setCell(4, 2, 'sanity_script.Runner')
-data.setCell(4, 3, 3534);
+data.setCell(2, 3, 38);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 57 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -312,40 +343,38 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">sanity_script.Runner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@a7cf42f)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@5ae95707)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
-                <span class="method-name">browserlaunchconfiguration(chrome, QA)</span>
-                <span class="method-start">735 ms</span>
+                <span class="method-name">browserlaunchconfiguration(chrome, Live)</span>
+                <span class="method-start">559 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("login page : go to offline and check the toast content", "offline sceanrios")</span>
-                <span class="method-start">12584 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Login page : click on the sigin in offline", "offline sceanrios")</span>
-                <span class="method-start">17194 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Login page : come back to online in login page", "offline sceanrios")</span>
-                <span class="method-start">20730 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Login the application", "offline sceanrios")</span>
-                <span class="method-start">25228 ms</span>
+                <span class="method-start">8674 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Stream page : offline scenario in stream page", "offline sceanrios")</span>
-                <span class="method-start">40979 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Pre-preview screen : Offline scenario in pre-preview screen", "offline sceanrios")</span>
+                <span class="method-start">10818 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("studio page : offline scenario in studio page", "offline sceanrios")</span>
+                <span class="method-start">10858 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">browserQuitconfiguration</span>
-                <span class="method-start">70235 ms</span>
+                <span class="method-start">14694 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">72927 ms</span>
+                <span class="method-start">14960 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
