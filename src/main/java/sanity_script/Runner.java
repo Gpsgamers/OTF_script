@@ -117,7 +117,6 @@ public class Runner extends AbstractTestNGCucumberTests {
 		switch (Browser) {
 		case "chrome":
 			((ChromeDriver) driver).executeCdpCommand("Network.emulateNetworkConditions", offlineParams);
-			Thread.sleep(3000);
 			System.out.println("Network disconnected");
 			break;
 

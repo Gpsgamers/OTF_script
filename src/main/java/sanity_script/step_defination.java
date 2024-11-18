@@ -32,7 +32,6 @@ public class step_defination extends method {
 		WebElement element = wait
 				.until(ExpectedConditions.visibilityOfElementLocated(Toast("You are currently offline")));
 		Assert.assertTrue(element.isDisplayed(), "Toast displayed worngly");
-		element.click();
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(Toast(content)));
 	}
 
@@ -52,7 +51,6 @@ public class step_defination extends method {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(Toast(content)));
 		Assert.assertTrue(element.isDisplayed(), "Toast displayed worngly");
-		element.click();
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(Toast(content)));
 	}
 
@@ -67,7 +65,6 @@ public class step_defination extends method {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(Toast(content)));
 		Assert.assertTrue(element.isDisplayed(), "Toast displayed worngly");
-		element.click();
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(Toast(content)));
 	}
 
@@ -82,16 +79,15 @@ public class step_defination extends method {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(Toast(content)));
 		Assert.assertTrue(element.isDisplayed(), "Toast displayed worngly");
-		element.click();
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(Toast(content)));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(loader));
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(loader));
 		Assert.assertTrue(driver.getCurrentUrl().equals("https://onthefly-qa.contus.us/broadcast"), "invalid URL");
 	}
 
-	
 	@Given("Navigate to the stream page")
 	public void navigate_to_the_stream_page() {
+		//
 	}
 
 	@When("Goes to offline in stream page")
@@ -107,7 +103,6 @@ public class step_defination extends method {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(Toast(content)));
 		Assert.assertTrue(element.isDisplayed(), "Toast displayed worngly");
-		element.click();
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(Toast(content)));
 	}
 
@@ -127,7 +122,6 @@ public class step_defination extends method {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(Toast(content)));
 		Assert.assertTrue(element.isDisplayed(), "Toast displayed worngly");
-		element.click();
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(Toast(content)));
 	}
 
@@ -170,7 +164,6 @@ public class step_defination extends method {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(Toast(content)));
 		Assert.assertTrue(element.isDisplayed(), "Toast displayed worngly");
-		element.click();
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(Toast(content)));
 		driver.navigate().refresh();
 	}
@@ -200,7 +193,6 @@ public class step_defination extends method {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(Toast(content)));
 		Assert.assertTrue(element.isDisplayed(), "Toast displayed worngly");
-		element.click();
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(Toast(content)));
 	}
 
@@ -215,7 +207,6 @@ public class step_defination extends method {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(Toast(content)));
 		Assert.assertTrue(element.isDisplayed(), "Toast displayed worngly");
-		element.click();
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(Toast(content)));
 	}
 
@@ -242,7 +233,6 @@ public class step_defination extends method {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(Toast(content)));
 		Assert.assertTrue(element.isDisplayed(), "Toast displayed worngly");
-		element.click();
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(Toast(content)));
 	}
 
@@ -275,7 +265,6 @@ public class step_defination extends method {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(Toast(content)));
 		Assert.assertTrue(element.isDisplayed(), "Toast displayed worngly");
-		element.click();
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(Toast(content)));
 	}
 
@@ -313,7 +302,6 @@ public class step_defination extends method {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(Toast(content)));
 		Assert.assertTrue(element.isDisplayed(), "Toast displayed worngly");
-		element.click();
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(Toast(content)));
 	}
 
@@ -328,7 +316,6 @@ public class step_defination extends method {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(Toast(content)));
 		Assert.assertTrue(element.isDisplayed(), "Toast displayed worngly");
-		element.click();
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(Toast(content)));
 	}
 
@@ -344,7 +331,6 @@ public class step_defination extends method {
 		String content = "Stream Created successfully";
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(Toast(content)));
 		Assert.assertTrue(element.isDisplayed(), "Toast displayed worngly");
-		element.click();
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(Toast(content)));
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(loader));
 	}
@@ -359,7 +345,6 @@ public class step_defination extends method {
 		String content = "You are currently offline";
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(Toast(content)));
 		Assert.assertTrue(element.isDisplayed(), "Toast displayed worngly");
-		element.click();
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(Toast(content)));
 	}
 
@@ -370,8 +355,8 @@ public class step_defination extends method {
 
 	@Then("Enter stream button should not be clickable")
 	public void enter_stream_button_should_not_be_clickable() {
-		WebElement element = driver.findElement(enter_stream_btn);
-		Assert.assertFalse(element.isEnabled(), "element is enabled");
+		WebElement element = driver.findElement(enter_stream_disable_btn);
+		Assert.assertTrue(element.isDisplayed(), "element is in enabled");
 	}
 
 	@Then("page is not navigating to the studio page")
@@ -390,7 +375,6 @@ public class step_defination extends method {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(Toast(content)));
 		Assert.assertTrue(element.isDisplayed(), "Toast displayed worngly");
-		element.click();
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(Toast(content)));
 	}
 
@@ -414,7 +398,6 @@ public class step_defination extends method {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(Toast(content)));
 		Assert.assertTrue(element.isDisplayed(), "Toast displayed worngly");
-		element.click();
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(Toast(content)));
 	}
 
@@ -446,7 +429,6 @@ public class step_defination extends method {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(Toast(content)));
 		Assert.assertTrue(element.isDisplayed(), "Toast displayed worngly");
-		element.click();
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(Toast(content)));
 	}
 
@@ -454,7 +436,7 @@ public class step_defination extends method {
 	public void page_should_be_navigating_to_the_pre_preview_screen() {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(enter_stream_btn));
-		Assert.assertTrue(element.isDisplayed(),"page is navigating to the pre-preview screen");
+		Assert.assertTrue(element.isDisplayed(), "page is navigating to the pre-preview screen");
 	}
 
 }

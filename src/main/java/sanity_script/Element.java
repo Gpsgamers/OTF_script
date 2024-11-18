@@ -57,4 +57,5 @@ public class Element extends Runner {
 	//pre-previw screen
 	public static By entering_stream_loader = By.xpath("entering_stream_wraper_loader");
 	public static By enter_stream_btn = By.xpath("//*[text()='Enter Stream']");
+	public static By enter_stream_disable_btn = By.xpath("//button[@class='entering_stream_enter disabled']");
 }
