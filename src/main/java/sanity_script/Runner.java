@@ -42,6 +42,7 @@ public class Runner extends AbstractTestNGCucumberTests {
 		driver = launchbrowser(browser);
 		Environment(environment);
 		driver.manage().window().maximize();
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 		driver.get(url);
 	}
 
@@ -54,7 +55,10 @@ public class Runner extends AbstractTestNGCucumberTests {
 	public WebDriver launchbrowser(String browser) {
 		if (browser.equals("chrome")) {
 			ChromeOptions options = new ChromeOptions();
-			 options.addArguments("--use-fake-ui-for-media-stream");
+			options.addArguments("--use-fake-ui-for-media-stream");
+			options.addArguments("--headless"); // Enable headless mode
+			options.addArguments("--disable-gpu"); // Optional: For Windows systems
+			options.addArguments("--window-size=1920,1080"); // Optional: Set window size
 			return new ChromeDriver(options);
 		} else if (browser.equals("edge")) {
 			EdgeOptions options = new EdgeOptions();
