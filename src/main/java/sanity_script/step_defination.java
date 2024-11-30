@@ -172,6 +172,10 @@ public class step_defination extends method {
 	public void click_on_the_destination_menu() {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(loader));
+		try {
+			wait.until(ExpectedConditions.invisibilityOfElementLocated(loader));
+		}catch(Exception e) {
+		}
 		driver.findElement(destination_menu).click();
 	}
 
