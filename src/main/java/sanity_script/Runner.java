@@ -26,9 +26,9 @@ import io.cucumber.testng.CucumberOptions;
 		glue = { "sanity_script" }, // Package for step definitions
 		plugin = { "pretty", // For console output
 				"html:target/cucumber-reports/Cucumber.html", // HTML report
-				"json:target/cucumber-reports/Cucumber.json",// JSON report
-				"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
-		}, monochrome = true // To make console output more readable
+				"json:target/cucumber-reports/Cucumber.json", // JSON report
+				"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm" }, monochrome = true // To make console output more
+																						// readable
 
 )
 public class Runner extends AbstractTestNGCucumberTests {
