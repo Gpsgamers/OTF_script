@@ -53,23 +53,31 @@ public class Runner extends AbstractTestNGCucumberTests {
 	}
 
 	public WebDriver launchbrowser(String browser) {
-		if (browser.equals("chrome")) {
+
+		switch (browser.toLowerCase()) {
+		case "chrome": {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--use-fake-ui-for-media-stream");
+			options.addArguments("--disable-notifications");
 //			options.addArguments("--headless"); // Enable headless mode
 //			options.addArguments("--disable-gpu"); // Optional: For Windows systems
-//			options.addArguments("--window-size=1920,1080"); // Optional: Set window size
 			return new ChromeDriver(options);
-		} else if (browser.equals("edge")) {
+		}
+		case "edge": {
 			EdgeOptions options = new EdgeOptions();
+			options.addArguments("--use-fake-ui-for-media-stream");
+			options.addArguments("--disable-notifications");
 			return new EdgeDriver(options);
-		} else if (browser.equals("firefox")) {
+		}
+		case "firefox": {
 			FirefoxOptions options = new FirefoxOptions();
 			return new FirefoxDriver(options);
-		} else if (browser.equals("safari")) {
+		}
+		case "safari": {
 			SafariOptions options = new SafariOptions();
 			return new SafariDriver(options);
-		} else {
+		}
+		default:
 			return null;
 		}
 	}
