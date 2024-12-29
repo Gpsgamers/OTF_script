@@ -3,9 +3,14 @@
 <suite name="Suite">
 	<test name="Test">
 		<parameter name="browser" value="chrome" />
-		<parameter name="environment" value="QA" />
+		<parameter name="environment" value="prod" />
+
+		<parameter name="Url_QA" value="https://onthefly-qa.contus.us/" />
+		<parameter name="Url_Dev" value="https://onthefly-dev.contus.us/" />
+		<parameter name="Url_Prod" value="https://console.onthefly.stream/" />
+
 		<classes>
-			<class name="sanity_script.Runner"/>
+			<class name="sanity_script.Runner" />
 		</classes>
 	</test> <!--
 	Test -->

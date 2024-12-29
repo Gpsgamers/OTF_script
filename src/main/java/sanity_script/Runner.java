@@ -36,12 +36,13 @@ public class Runner extends AbstractTestNGCucumberTests {
 	public static String Browser, Owner, Admin, cohost, Owner_password, Admin_password, cohost_password, url;
 
 	@BeforeClass
-	@Parameters({ "browser", "environment" })
-	public void browserlaunchconfiguration(String browser, String environment) throws InterruptedException {
+	@Parameters({ "browser", "environment", "Url_QA", "Url_Dev", "Url_Prod" })
+	public void browserlaunchconfiguration(String browser, String environment, String Url_QA, String Url_Dev,
+			String Url_Prod) {
 		Browser = browser;
 		System.out.println(Browser);
 		driver = launchbrowser(browser);
-		Environment(environment);
+		Environment(environment,Url_QA, Url_Dev, Url_Prod);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 		driver.get(url);
@@ -82,10 +83,10 @@ public class Runner extends AbstractTestNGCucumberTests {
 		}
 	}
 
-	public void Environment(String Env) {
-		switch (Env) {
-		case "QA":
-			url = "https://onthefly-qa.contus.us/";
+	public void Environment(String Env, String Url_QA, String Url_Dev, String Url_Prod) {
+		switch (Env.toLowerCase()) {
+		case "qa":
+			url = Url_QA;
 
 			Owner = "guruprasad.b@contus.in";
 			Owner_password = "Welcome@123";
@@ -95,8 +96,8 @@ public class Runner extends AbstractTestNGCucumberTests {
 			cohost_password = "";
 			break;
 
-		case "DEV":
-			url = "https://onthefly-dev.contus.us/";
+		case "dev":
+			url = Url_Dev;
 
 			Owner = "rahul.s@contus.in";
 			Owner_password = "";
@@ -106,8 +107,8 @@ public class Runner extends AbstractTestNGCucumberTests {
 			cohost_password = "";
 			break;
 
-		case "Live":
-			url = "https://console.onthefly.stream/";
+		case "prod":
+			url = Url_Prod;
 
 			Owner = "guruprasad.b@contus.in";
 			Owner_password = "Welcome@123";
